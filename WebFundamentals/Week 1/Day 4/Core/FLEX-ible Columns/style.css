@@ -1,0 +1,43 @@
+.row{
+
+    display: flex;  
+    flex: 1;   
+    margin: 0% auto;
+}
+
+.col{
+
+    display:flex;
+    flex: 1;
+    background-color:rgb(11, 105, 83);
+    color: white;
+    height: 100px;
+    width:90% ;
+    margin: 20px;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.col-2
+{
+    display:flex;
+    flex: 1;
+    background-color: rgb(11, 105, 83);
+    color: white;
+    height: 100px;
+    width:90% ;
+    margin: 20px;
+    align-items: center;
+}
+
+.col-3
+{
+    display:flex;
+    flex: 1;
+    background-color: rgb(11, 105, 83);
+    color: white;
+    height: 100px;
+    width:90% ;
+    margin: 20px;
+    align-items: center;
+}

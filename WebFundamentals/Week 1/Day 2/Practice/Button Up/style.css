@@ -1,0 +1,41 @@
+.search-button {
+    background-color: whitesmoke;
+    color: rgb(84, 202, 163) ;
+    border: 2px solid rgb(84, 202, 163) ;
+    border-radius: 20px;
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-left: 70px;
+    margin-top: 70px;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.add {
+    background-color: rgb(84, 202, 163) ;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    height: 12px;
+    width: 12px;
+    margin-left: 70px;
+    text-align: center;
+    font-size:12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.create-account {
+    background-color: rgb(35, 35, 251);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 70px;
+    height: 30px;
+    width: 160px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 2px;
+}

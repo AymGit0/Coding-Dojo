@@ -1,0 +1,39 @@
+
+.nav,.nav-title{
+    display: flex;
+    background-color: rgb(37, 33, 33);
+    color: white;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.active{
+    font-weight: 600;
+}
+
+.nav,.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.a{
+    margin: 20px;
+    color: white;
+    font-family: sans-serif;
+    
+}
+.btn{
+    background-color: rgb(35, 201, 251);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 2px;
+    height:35px;
+    width:100px;
+}
