@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        
+  
+        .container {
+            display: inline-flex;
+            flex-wrap: nowrap; 
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: var(--color);
+            margin: 10px; 
+            border-radius: 5% 10px;
+            display: inline-block;
+            }
+        h1 {
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div><h1>Playground</h1></div>
+    
+    {% for i in range(num|int) %}
+    <div class="container"></div>
+    <div style="--color: {{myCol}}" class="box"></div>
+</div>
+
+{% endfor %}
+
+    
+    
+
+</body>
+</html>
