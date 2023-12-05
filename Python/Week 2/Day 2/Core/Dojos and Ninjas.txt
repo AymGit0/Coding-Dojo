@@ -1,0 +1,53 @@
+INSERT INTO `dojos_and_ninjas`.`dojos` (`id`, `name`) VALUES ('1', 'Power Punch Dojo');
+INSERT INTO `dojos_and_ninjas`.`dojos` (`id`, `name`) VALUES ('2', 'Samurai Strong ️');
+INSERT INTO `dojos_and_ninjas`.`dojos` (`id`, `name`) VALUES ('3', 'Strike Zone');
+
+
+DELETE FROM `dojos_and_ninjas`.`dojos` WHERE (`id` = '3');
+DELETE FROM `dojos_and_ninjas`.`dojos` WHERE (`id` = '2');
+DELETE FROM `dojos_and_ninjas`.`dojos` WHERE (`id` = '1');
+
+INSERT INTO `dojos_and_ninjas`.`dojos` (`id`, `name`) VALUES ('1', 'Power Punch Dojo');
+INSERT INTO `dojos_and_ninjas`.`dojos` (`id`, `name`) VALUES ('2', 'Samurai Strong ️');
+INSERT INTO `dojos_and_ninjas`.`dojos` (`id`, `name`) VALUES ('3', 'Strike Zone');
+
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`id`, `first_name`, `last_name`, `age`, `dojos_id`) VALUES ('1', 'Hattori', 'Hanzō', '51', '1');
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`id`, `first_name`, `last_name`, `age`, `dojos_id`) VALUES ('2', 'Fūma', 'Kotarō', '52', '1');
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojos_id`) VALUES ('6','Katō', 'Danzō', '53', '1');
+
+
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`id`, `first_name`, `last_name`, `age`, `dojos_id`) VALUES ('0', 'Kakashi', 'Hatake', '54', '2');
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`id`, `first_name`, `last_name`, `age`, `dojos_id`) VALUES ('0', 'Danzo', 'Shimura', '55', '2');
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`id`, `first_name`, `last_name`, `age`, `dojos_id`) VALUES ('0', 'Kaguya', 'Otsutsuki', '56', '2');
+
+
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojos_id`) VALUES ('Ishikawa', 'Goemon', '57', '3');
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojos_id`) VALUES ('Sarutobi', 'Sasuke', '58', '3');
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojos_id`) VALUES ('Kirigakure', 'Saizō', '59', '3');
+
+
+SELECT *
+FROM ninjas
+WHERE dojos_id= 1;
+
+
+SELECT *
+FROM ninjas
+WHERE dojos_id= 3;
+
+
+SELECT dojos_id FROM ninjas
+ORDER BY id DESC
+LIMIT 1;
+
+
+SELECT * FROM ninjas
+JOIN dojos ON dojos_id = ninjas.dojos_id
+WHERE ninjas.id = 6;
+
+SELECT * FROM ninjas
+JOIN dojos ON dojos_id = ninjas.dojos_id
+
+
+
+
