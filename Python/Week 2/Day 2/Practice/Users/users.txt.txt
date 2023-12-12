@@ -1,0 +1,23 @@
+INSERT INTO users (first_name, last_name, email)
+VALUES ("Aymen","Jim","Jim@codingdojo.com"),
+("Morrison","Jhon","Morrison@Jhon.com"),
+("Bob","Mandella","Mandella@gmail.com");
+
+
+SELECT * FROM users;
+
+SELECT * FROM users
+WHERE email = 'Jim@codingdojo.com';
+
+SELECT * FROM users
+WHERE id = 3;
+
+UPDATE users SET last_name = "Jhon"
+WHERE users.id = 3;
+
+
+DELETE FROM users
+WHERE users.id = 2;
+
+SELECT * FROM users
+ORDER BY first_name DESC;
